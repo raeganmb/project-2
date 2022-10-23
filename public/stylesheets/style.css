@@ -1,8 +1,51 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-family: Optima;
 }
 
-a {
-  color: #00B7FF;
+.header {
+  background: rgb(145 178 116);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  justify-content: center;
+  max-width: 90px;
+  max-height: 90px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+button {
+  float: right;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 25px;
+  border-radius: 4px;
+  background-color: rgb(249, 254, 193);
+  font-family: Optima;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h1 {
+  color: rgb(71, 87, 57);
+}
+
+#first {
+  padding-left: 20px;
+}
+
+#second {
+  padding-left: 60px;
+}
+
+#third {
+  padding-left: 100px;
+}
+
+p {
+  padding-left: 15px;
+  color: rgb(71, 87, 57);
 }
