@@ -43,6 +43,10 @@ h1 {
   color: rgb(71, 87, 57);
 }
 
+.box {
+ float: left;
+}
+
 #first {
   padding-left: 50px;
 }
@@ -56,18 +60,18 @@ h1 {
 }
 
 .main {
-  display: block;
-  position: relative;
-  float: center;
-  margin-left: auto;
-  margin-right: auto;
-width: 50%;
-height: auto;
-border-radius: 4px;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  border-radius: 4px;
+  border: 0px
+}
+
+.box2 {
+  float: right;
 }
 
 p {
-  float: right;
   padding-right: 50px;
   color: rgb(71, 87, 57);
 }
