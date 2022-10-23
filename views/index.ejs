@@ -6,15 +6,35 @@
   </head>
   <body>
     <div class="header">
-      <img src="/images/logo.jpeg"></img>
+      <img src="/images/logo.jpeg" class="header-img"/>
       <div class="header-right">
         <button class="active" href="#logout">Logout</button>
         <button href="#login">Login with Google</button>
       </div>
     </div>
-    <h1 id="first">WET</h1>
-    <h1 id="second">YOUR</h1>
-    <h1 id="third">PLANTS</h1>
+    <div class="box">
+      <h1 id="first">WET</h1>
+      <h1 id="second">YOUR</h1>
+      <h1 id="third">PLANTS</h1>
+    <div class="img-div">
+      <img src="/images/wetplants.png" usemap="#image-map" class="main" />
+      <map name="image-map">
+        <area
+          target="_self"
+          title="create_post"
+          href="/views/create.ejs"
+          coords="205,957,NaN"
+          shape="circle"
+        />
+        <area
+          target="_self"
+          title="see_posts"
+          href="/views/allposts.ejs"
+          coords="1156,467,NaN"
+          shape="circle"
+        />
+      </map>
+    </div>
     <p>A plant-loving community <3</p>
   </body>
 </html>

@@ -1,6 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Optima;
+  background-color: rgba(252, 254, 223);
 }
 
 .header {
@@ -9,7 +14,7 @@ body {
   padding-right: 15px;
 }
 
-img {
+.header-img {
   justify-content: center;
   max-width: 90px;
   max-height: 90px;
@@ -29,23 +34,40 @@ button {
   cursor: pointer;
 }
 
+.box {
+  position: relative;
+  display: inline-block;
+}
+
 h1 {
   color: rgb(71, 87, 57);
 }
 
 #first {
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 #second {
-  padding-left: 60px;
+  padding-left: 90px;
 }
 
 #third {
-  padding-left: 100px;
+  padding-left: 130px;
+}
+
+.main {
+  display: block;
+  position: relative;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+width: 50%;
+height: auto;
+border-radius: 4px;
 }
 
 p {
-  padding-left: 15px;
+  float: right;
+  padding-right: 50px;
   color: rgb(71, 87, 57);
 }
