@@ -5,6 +5,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const session = require("express-session");
 const passport = require("passport");
+const GoogleStrategy= require("passport-google-oauth").OAuth2Strategy;
 
 // load the env vars
 require("dotenv").config();
