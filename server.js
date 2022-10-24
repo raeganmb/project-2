@@ -9,10 +9,16 @@ const passport = require("passport");
 // load the env vars
 require("dotenv").config();
 
+// create Express app
+var app = express();
+
+// connect to the MongoDB with mongoose
+require("./config/database");
+require("./config/passport");
+
+// require routes
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-
-var app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
