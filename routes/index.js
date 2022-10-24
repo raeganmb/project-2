@@ -34,4 +34,8 @@ router.get("/logout", function (req, res, next) {
   res.redirect("/");
 });
 
+router.get("/", function (req, res) {
+  res.redirect("/users/create");
+});
+
 module.exports = router;

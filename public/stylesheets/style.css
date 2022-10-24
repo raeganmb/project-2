@@ -16,8 +16,8 @@ body {
 
 .header-img {
   justify-content: center;
-  max-width: 90px;
-  max-height: 90px;
+  max-width: 80px;
+  max-height: 80px;
   font-size: 18px;
   border-radius: 4px;
 }
@@ -66,16 +66,18 @@ h1 {
 }
 
 .main {
-  justify-content: center;
-  width: 50%;
+  width: 550px;
   height: auto;
 }
 
-.box2 {
-  float: right;
-}
-
 p {
+  float: right;
   padding-right: 50px;
   color: rgb(71, 87, 57);
+}
+
+.footer {
+  background: rgb(145 178 116);
+  padding-left: 15px;
+  padding-right: 15px;
 }

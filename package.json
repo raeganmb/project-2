@@ -13,6 +13,7 @@
     "express": "~4.16.1",
     "express-session": "^1.17.3",
     "http-errors": "~1.6.3",
+    "image-map": "^2.0.1",
     "mongoose": "^5.9.2",
     "morgan": "~1.9.1",
     "node": "^19.0.0",

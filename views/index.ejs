@@ -12,7 +12,7 @@
           <% if (!user) { %>
           <a href="/auth/google">Login with Google</a>
           <% } else { %>
-          <a class="active" href="/logout">Logout</a>
+          <a href="/logout">Logout</a>
           <% } %>
         </li>
       </div>
@@ -23,26 +23,22 @@
       <h1 id="third">PLANTS</h1>
     </div>
     <div class="img-div">
-      <img src="/images/wetplants.jpg" usemap="#image-map" class="main" />
       <map name="image-map">
         <area
           target="_self"
-          title="create_post"
-          href="/views/create.ejs"
-          coords="205,957,NaN"
+          coords="198,945,71"
           shape="circle"
+          href="http://google.com"
         />
         <area
           target="_self"
-          title="see_posts"
-          href="/views/allposts.ejs"
-          coords="1156,467,NaN"
+          coords="1155,455,75"
           shape="circle"
+          href="/views/users/allposts.ejs"
         />
       </map>
-    </div>
-    <div class="box2">
+      <img src="/images/wetplants.jpg" usemap="#image-map" class="main" />
+      </div>
       <p>A plant-loving community <3</p>
-    </div>
   </body>
 </html>
