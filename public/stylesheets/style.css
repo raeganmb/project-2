@@ -28,10 +28,11 @@ body {
 }
 
 button {
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 12px;
   border-radius: 4px;
+  line-height: 20px;
   background-color: rgb(249, 254, 193);
+  color: rgb(71, 87, 57);
   font-family: Optima;
   font-weight: bold;
   cursor: pointer;

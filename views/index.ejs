@@ -8,8 +8,13 @@
     <div class="header">
       <img src="/images/logo.jpeg" class="header-img" />
       <div class="header-right">
-        <button class="active" href="#logout">Logout</button>
-        <button href="#login">Login with Google</button>
+        <li style="list-style: none">
+          <% if (!user) { %>
+          <a href="/auth/google">Login with Google</a>
+          <% } else { %>
+          <a class="active" href="/logout">Logout</a>
+          <% } %>
+        </li>
       </div>
     </div>
     <div class="box">
@@ -18,7 +23,7 @@
       <h1 id="third">PLANTS</h1>
     </div>
     <div class="img-div">
-      <img src="/images/wetplants.png" usemap="#image-map" class="main"/>
+      <img src="/images/wetplants.png" usemap="#image-map" class="main" />
       <map name="image-map">
         <area
           target="_self"
