@@ -5,7 +5,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const session = require("express-session");
 const passport = require("passport");
-const GoogleStrategy= require("passport-google-oauth").OAuth2Strategy;
+const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
 
 // load the env vars
 require("dotenv").config();
@@ -20,6 +20,8 @@ require("./config/passport");
 // require routes
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+const postsRouter = require("./routes/posts");
+// const commentsRouter = require("./routes/comments");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -42,6 +44,9 @@ app.use(passport.session());
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
+app.use("/posts", postsRouter);
+// app.use("/test",(res, req) => console.log("test"));
+// app.use("./comments", commentsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -7,9 +7,9 @@ const userCtrl = require("../controllers/users");
 /* GET home page. */
 router.get("/home", userCtrl.index);
 
-router.get("/", function (req, res) {
-  res.redirect("/home");
-});
+// router.get("/", function (req, res) {
+//   res.redirect("/home");
+// });
 
 // Google OAuth login route
 router.get(
@@ -21,7 +21,7 @@ router.get(
 router.get(
   "/oauth2callback",
   passport.authenticate("google", {
-    successRedirect: "/user/posts",
+    successRedirect: "/posts",
     failureRedirect: "/home",
   })
 );
@@ -31,11 +31,7 @@ router.get("/logout", function (req, res, next) {
   req.logout(function (err) {
     if (err) return next(err);
   });
-  res.redirect("/");
+  res.redirect("/home");
 });
-
-// router.get("/", function (req, res) {
-//   res.redirect("/users/create");
-// });
 
 module.exports = router;
