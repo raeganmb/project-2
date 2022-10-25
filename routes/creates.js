@@ -14,4 +14,9 @@ router.get("/logout", function (req, res, next) {
   res.redirect("/home");
 });
 
+// All Posts route
+router.get("/posts", function (req, res) {
+  res.render("./users/posts");
+});
+
 module.exports = router;

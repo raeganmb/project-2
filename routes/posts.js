@@ -6,20 +6,20 @@ const postsCtrl = require("../controllers/posts");
 // router.post("/", postsCtrl.index);
 
 router.get("/", function (req, res) {
-    res.render("./users/posts");
+  res.render("./users/posts");
 });
 
 // OAuth logout route
 router.get("/logout", function (req, res, next) {
-    req.logout(function (err) {
-      if (err) return next(err);
-    });
-    res.redirect("/home");
+  req.logout(function (err) {
+    if (err) return next(err);
   });
-  
-  // Create Post route
-  router.get("/create", function (req, res) {
-    res.render("./create")
-  });
+  res.redirect("/home");
+});
+
+// Create Post route
+router.get("/create", function (req, res) {
+  res.render("./users/create");
+});
 
 module.exports = router;
