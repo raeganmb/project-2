@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Optima;
-  background-color: rgba(253, 253, 222);
+  background-color: rgba(253, 254, 226);
 }
 
 .header {
@@ -40,6 +40,19 @@ a {
   cursor: pointer;
 }
 
+.a2 {
+  font-size: 12px;
+  border: 1px solid rgb(71, 87, 57);
+  border-radius: 4px;
+  padding: 12px;
+  line-height: 15px;
+  background-color: rgb(246, 217, 213);
+  color: rgb(71, 87, 57);
+  font-family: Optima;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .box {
   position: relative;
   display: inline-block;
@@ -49,35 +62,55 @@ h1 {
   color: rgb(71, 87, 57);
 }
 
+h2 {
+  color: rgb(71, 87, 57);
+  padding-left: 40px;
+}
 .box {
   float: left;
 }
 
 #first {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 #second {
-  padding-left: 90px;
+  padding-left: 70px;
 }
 
 #third {
-  padding-left: 130px;
+  padding-left: 100px;
 }
 
 .main {
-  width: 550px;
+  width: 600px;
   height: auto;
 }
-
+/* 
 p {
   float: right;
   padding-right: 50px;
   color: rgb(71, 87, 57);
+} */
+
+label {
+  color: rgb(71, 87, 57);
+  text-align: center;
 }
 
-.footer {
-  background: rgb(145 178 116);
-  padding-left: 15px;
-  padding-right: 15px;
+#new-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 25rem));
+  align-items: center;
+}
+
+#new-form input [name="question"] {
+padding: 12px 20px;
+margin: 8px 0;
+}
+
+#new-form input[type="submit"] {
+  grid-column: span 2;
+  margin-left: auto;
 }

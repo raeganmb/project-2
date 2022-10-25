@@ -21,7 +21,7 @@ router.get(
 router.get(
   "/oauth2callback",
   passport.authenticate("google", {
-    successRedirect: "/home",
+    successRedirect: "/user/posts",
     failureRedirect: "/home",
   })
 );
@@ -34,8 +34,8 @@ router.get("/logout", function (req, res, next) {
   res.redirect("/");
 });
 
-router.get("/", function (req, res) {
-  res.redirect("/users/create");
-});
+// router.get("/", function (req, res) {
+//   res.redirect("/users/create");
+// });
 
 module.exports = router;
