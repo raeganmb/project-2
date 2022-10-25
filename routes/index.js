@@ -7,10 +7,6 @@ const userCtrl = require("../controllers/users");
 /* GET home page. */
 router.get("/home", userCtrl.index);
 
-// router.get("/", function (req, res) {
-//   res.redirect("/home");
-// });
-
 // Google OAuth login route
 router.get(
   "/auth/google",

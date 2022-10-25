@@ -2,7 +2,7 @@ const Post = require("../models/post");
 
 module.exports = {
     index,
-    new: newPost,
+    // new: newPost,
 };
 
 function index(req, res) {
@@ -12,6 +12,6 @@ function index(req, res) {
     });
 };
   
-  function newPost(req, res) {
-    res.render('posts/create', { title: 'Add Movie' });
-  }
+  // function newPost(req, res) {
+  //   res.render('posts/create', { title: 'Create Post' });
+  // }

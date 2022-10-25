@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 const postsCtrl = require("../controllers/posts");
 
-router.get("/create", postsCtrl.new);
-router.post("/", postsCtrl.index);
+// router.get("/create", postsCtrl.new);
+// router.post("/", postsCtrl.index);
 
 router.get("/", function (req, res) {
     res.render("./users/posts");
@@ -17,4 +17,9 @@ router.get("/logout", function (req, res, next) {
     res.redirect("/home");
   });
   
+  // Create Post route
+  router.get("/create", function (req, res) {
+    res.render("./create")
+  });
+
 module.exports = router;
