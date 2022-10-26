@@ -19,4 +19,8 @@ router.get("/logout", function (req, res, next) {
   res.redirect("/home");
 });
 
+router.get("/show", function (req, res) {
+  res.render("./users/show");
+});
+
 module.exports = router;
