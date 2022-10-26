@@ -14,11 +14,6 @@ router.get("/logout", function (req, res, next) {
   res.redirect("/home");
 });
 
-// // All Posts route
-// router.get("/posts", function (req, res) {
-//   res.render("/posts");
-// });
-
 router.post("/", postsCtrl.create);
 
 module.exports = router;
