@@ -2,13 +2,12 @@ const Post = require("../models/post");
 const posts = require("./posts");
 
 module.exports = {
-  // new: newPost,
   create,
   index,
 };
 
+// Create a Post
 function create(req, res) {
-  console.log(req.body, 'this is in creates controller, create function');
   const post = new Post(req.body);
   post.save(function (err) {
     // handle errors
