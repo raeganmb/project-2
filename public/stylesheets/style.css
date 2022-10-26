@@ -41,11 +41,11 @@ a {
 }
 
 .a2 {
-  font-size: 12px;
+  font-size: 11px;
   border: 1px solid rgb(71, 87, 57);
   border-radius: 4px;
-  padding: 12px;
-  line-height: 15px;
+  padding: 10px;
+  line-height: 13px;
   background-color: rgb(246, 217, 213);
   color: rgb(71, 87, 57);
   font-family: Optima;
