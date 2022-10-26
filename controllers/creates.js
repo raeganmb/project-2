@@ -1,10 +1,17 @@
 const Post = require("../models/post");
 
 module.exports = {
-    index,
-    new: newPost,
+  // new: newPost,
+  create,
 };
 
-  function newPost(req, res) {
-    res.render('posts/create', { title: 'Create Post' });
-  }
+
+function create(req, res) {
+  const post = new Post(req.body);
+  post.save(function (err) {
+    // handle errors
+    if (err) return res.render("users/posts");
+    // redirect
+    else res.redirect("/users/show");
+  });
+}

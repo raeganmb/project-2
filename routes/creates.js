@@ -16,7 +16,11 @@ router.get("/logout", function (req, res, next) {
 
 // All Posts route
 router.get("/posts", function (req, res) {
-  res.render("./users/posts");
+  res.render("/posts");
+});
+
+router.post("/", function (req, res) {
+  res.render("./users/show");
 });
 
 module.exports = router;
