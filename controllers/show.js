@@ -1,14 +1,12 @@
-
 const Post = require("../models/post");
 
 module.exports = {
-  // new: newPost,
   create,
   index,
+  show,
 };
 
 function create(req, res) {
-  console.log(req.body);
   const post = new Post(req.body);
   post.save(function (err) {
     // handle errors
@@ -25,3 +23,8 @@ function index(req, res) {
   });
 }
 
+function show(req, res) {
+  Post.findById(req.params.id, function (err, posts) {
+    res.render("users/show", { title: "Post Details", posts });
+  });
+}

@@ -132,3 +132,10 @@ table td {
   padding: 10px;
   text-align: center;
 }
+
+#show-page {
+  margin: 100px;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(71, 87, 57);
+}
