@@ -22,6 +22,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const postsRouter = require("./routes/posts");
 const createsRouter = require("./routes/creates");
+const showRouter = require("./routes/show");
 // const commentsRouter = require("./routes/comments");
 
 // view engine setup
@@ -47,6 +48,7 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/posts", postsRouter);
 app.use("/create", createsRouter);
+app.use("/show", showRouter);
 // app.use("/test",(res, req) => console.log("test"));
 // app.use("./comments", commentsRouter);
 

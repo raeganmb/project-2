@@ -102,13 +102,13 @@ label {
 #new-form {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(2, minmax(auto, 25rem));
-  align-items: center;
+  grid-template-columns: repeat(2, minmax(auto, 25rem))
 }
 
 #new-form input [name="question"] {
 padding: 12px 20px;
 margin: 8px 0;
+
 }
 
 #new-form input[type="submit"] {

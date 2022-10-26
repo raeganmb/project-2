@@ -6,13 +6,14 @@
   </head>
   <body>
     <div class="header">
-      <img src="/images/logo.jpeg" class="header-img"/>
+      <img src="/images/logo.jpeg" class="header-img" />
       <div class="header-right">
         <a href="/posts/create">Create Post</a>
         <a href="/logout">Logout</a>
       </div>
     </div>
     <div class="box">
+      <h1>posts.ejs</h1>
       <h2>WET YOUR PLANTS</h2>
     </div>
     <div>
@@ -20,13 +21,18 @@
         <thead>
           <tr>
             <th>Title</th>
-            <th>Date</th>
+            <th>Question</th>
           </tr>
         </thead>
         <tbody>
-      
-          </tbody>
-        </table>
+          <% posts.forEach(function(p) { %>
+          <tr>
+            <td><%= p.title %></td>
+            <td><%= p.question %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>

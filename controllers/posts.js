@@ -17,6 +17,7 @@ function newPost(req, res) {
 }
 
 function create(req, res) {
+  console.log(req.body, 'this is in post crt create function')
   const post = new Post(req.body);
   post.save(function (err) {
     // handle errors

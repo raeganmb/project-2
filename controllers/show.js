@@ -1,5 +1,5 @@
+
 const Post = require("../models/post");
-const posts = require("./posts");
 
 module.exports = {
   // new: newPost,
@@ -8,7 +8,7 @@ module.exports = {
 };
 
 function create(req, res) {
-  console.log(req.body, 'this is in creates controller, create function');
+  console.log(req.body);
   const post = new Post(req.body);
   post.save(function (err) {
     // handle errors
@@ -24,3 +24,4 @@ function index(req, res) {
     res.render("./users/posts", { posts });
   });
 }
+

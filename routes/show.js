@@ -2,11 +2,16 @@ const express = require("express");
 const router = express.Router();
 const postsCtrl = require("../controllers/creates");
 
+const Post = require("../models/post");
 router.get("/", function (req, res) {
-  res.render("./users/create");
+    Post.find({}, function (err, posts) {
+        console.log(posts);
+        res.render("./users/show", { posts });
+      });
+
 });
 
-// OAuth logout route
+// // OAuth logout route
 router.get("/logout", function (req, res, next) {
   req.logout(function (err) {
     if (err) return next(err);
@@ -19,6 +24,6 @@ router.get("/logout", function (req, res, next) {
 //   res.render("/posts");
 // });
 
-router.post("/", postsCtrl.create);
+// router.post("/", postsCtrl.create);
 
 module.exports = router;
