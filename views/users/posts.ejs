@@ -33,9 +33,20 @@
             </td>
             <td>
               <form action="/posts/<%=p.id%>?_method=DELETE" method="POST">
-                <input type="hidden" name="_method" value="DELETE">
-                <input  class="a2" type="submit" name="_method" value="Delete Post">
-            </form>
+                <input type="hidden" name="_method" value="DELETE" />
+                <input
+                  class="a2"
+                  type="submit"
+                  name="_method"
+                  value="Delete Post"
+                  style="text-decoration: underline"
+                />
+              </form>
+            </td>
+            <td>
+              <a class="a2" id="edit-post" href="/posts/show/<%=p.id%>/edit"
+                >Edit Post</a
+              >
             </td>
           </tr>
           <% }); %>

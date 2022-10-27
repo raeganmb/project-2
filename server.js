@@ -25,6 +25,7 @@ const postsRouter = require("./routes/posts");
 const createsRouter = require("./routes/creates");
 const showRouter = require("./routes/show");
 const commentsRouter = require("./routes/comments");
+const editsRouter = require("./routes/edits")
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -52,6 +53,7 @@ app.use("/posts", postsRouter);
 app.use("/create", createsRouter);
 app.use("/show", showRouter);
 app.use("/comments", commentsRouter);
+app.use("/edits", editsRouter);
 
 
 
