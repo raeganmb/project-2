@@ -18,9 +18,9 @@
       <h2>Post Details</h2>
       <section id="show-page">
         <div>Title:</div>
-        <div><%= posts.title %></div>
+        <div><%= post.title%></div>
         <div>Question:</div>
-        <div><%= posts.question %></div>
+        <div><%= post.question %></div>
       </section>
     </div>
 
@@ -31,14 +31,14 @@
       <form
         id="add-comment-form"
         method="POST"
-        action="/posts/<%= posts._id %>/show"
+        action="/posts/<%= post._id %>/show"
       >
         <label>Comment:</label>
         <textarea name="content"></textarea>
         <input class="a2" type="submit" value="Add Comment" />
       </form>
 
-      <% if (posts.comments) { %>
+      <% if (post.comments) { %>
       <table>
         <thead>
           <tr>

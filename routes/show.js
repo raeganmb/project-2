@@ -21,10 +21,16 @@ router.get("/logout", function (req, res, next) {
 
 router.get("/:id", function (req, res) {
   console.log(req.params.id);
-  Post.find({}, function (err, posts) {
-    console.log(posts);
-    res.render("users/show", { title: "All Posts", posts });
+  Post.findById(req.params.id, function (err, post) {
+    console.log(post, 'wihtin show routes /id ');
+    res.render("users/show", { post });
   });
 });
+
+// router.delete("/:id", function(req, res) {
+//   Post.findById(req.params.id, function (err, post) {
+//     res.render("/", )
+//   })
+// })
 
 module.exports = router;

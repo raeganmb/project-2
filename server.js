@@ -6,6 +6,7 @@ var logger = require("morgan");
 const session = require("express-session");
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
+var methodOverride = require("method-override");
 
 // load the env vars
 require("dotenv").config();
@@ -23,7 +24,7 @@ var usersRouter = require("./routes/users");
 const postsRouter = require("./routes/posts");
 const createsRouter = require("./routes/creates");
 const showRouter = require("./routes/show");
-const commentsRouter = require("./routes/comments")
+const commentsRouter = require("./routes/comments");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -44,12 +45,14 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use(methodOverride('_method'));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/posts", postsRouter);
 app.use("/create", createsRouter);
 app.use("/show", showRouter);
 app.use("/comments", commentsRouter);
+
 
 
 // catch 404 and forward to error handler

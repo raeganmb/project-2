@@ -34,7 +34,10 @@
               <a class="a2" href="/show/<%=p.id%>">See Post</a>
             </td>
             <td>
-              <a class="a2" href="/">Delete Post</a>
+              <form class="a2" action="/posts/<%=p.id%>?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="submit" name="_method" value="DELETE">
+            </form>
             </td>
           </tr>
           <% }); %>

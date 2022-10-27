@@ -22,4 +22,14 @@ router.get("/show", function (req, res) {
   res.render("./users/show");
 });
 
+router.delete("/:id", function (req, res){
+  console.log("Testinnnggg");
+  Post.findByIdAndDelete(req.params.id).then(function(res){
+    console.log(res); // Success
+}).catch(function(error){
+    console.log(error); // Failure
+})
+res.redirect("/posts")
+});
+
 module.exports = router;
