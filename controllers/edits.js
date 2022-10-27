@@ -6,7 +6,8 @@ module.exports = {
 
 // Edit a Post
 function edit(req, res) {
-  Post.put(function (err) {
+  const post = Post(req.body);
+  post.put(function (err) {
     // handle errors
     if (err) return res.render("./users/posts");
     // redirect

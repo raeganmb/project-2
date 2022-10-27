@@ -3,7 +3,7 @@ const router = express.Router();
 const editsCtrl = require("../controllers/edits");
 
 router.get("/", function (req, res) {
-  res.render("./users/create");
+  res.render("./users/edit");
 });
 
 // OAuth logout route
@@ -14,6 +14,15 @@ router.get("/logout", function (req, res, next) {
   res.redirect("/home");
 });
 
-router.put("/create", editsCtrl.edit);
+
+// Edit a Post
+router.put(function (err) {
+      // handle errors
+      if (err) return res.render("./users/posts");
+      // redirect
+      else res.redirect("/posts");
+    });
+
+    router.put("/create", editsCtrl.edit);
 
 module.exports = router;

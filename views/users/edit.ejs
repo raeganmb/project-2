@@ -22,9 +22,9 @@
     <div class="create-form">
       <form id="new-form" action="/create" method="POST">
         <label>Title:</label>
-        <input type="text" name="title" value="<%= post.title%>" />
+        <input type="text" name="title" value="<%= post.title %>" />
         <label>Question:</label>
-        <textarea rows="15" cols="1" type="text" name="question"></textarea>
+        <textarea value="<%= post.question %>" rows="15" cols="1" type="text" name="question"></textarea>
         <input class="a2" type="submit" value="Edit Post" style="text-decoration-line: underline;"/>
       </form>
     </div>
