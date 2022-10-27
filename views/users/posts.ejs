@@ -21,7 +21,6 @@
           <tr>
             <th>Title</th>
             <th>Question</th>
-            <!-- <th>User</th> -->
           </tr>
         </thead>
         <tbody>
@@ -29,14 +28,13 @@
           <tr>
             <td><%= p.title %></td>
             <td><%= p.question %></td>
-            <!-- <td><%= p._id %></td> -->
             <td>
               <a class="a2" href="/show/<%=p.id%>">See Post</a>
             </td>
             <td>
-              <form class="a2" action="/posts/<%=p.id%>?_method=DELETE" method="POST">
+              <form action="/posts/<%=p.id%>?_method=DELETE" method="POST">
                 <input type="hidden" name="_method" value="DELETE">
-                <input type="submit" name="_method" value="DELETE">
+                <input  class="a2" type="submit" name="_method" value="Delete Post">
             </form>
             </td>
           </tr>
