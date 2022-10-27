@@ -53,6 +53,19 @@ a {
   cursor: pointer;
 }
 
+#see-post {
+  font-size: 11px;
+  border: 1px solid rgb(71, 87, 57);
+  border-radius: 4px;
+  padding: 10px;
+  line-height: 12px;
+  background-color: rgb(246, 217, 213);
+  color: rgb(71, 87, 57);
+  font-family: Optima;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .box {
   position: relative;
   display: inline-block;
@@ -129,7 +142,6 @@ table thead th {
 
 table td {
   padding: 20px;
-  margin: auto;
   text-align: left;
 }
 
@@ -140,6 +152,3 @@ table td {
   color: rgb(71, 87, 57);
 }
 
-td {
-  margin: auto;
-}
