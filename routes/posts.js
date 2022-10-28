@@ -22,6 +22,7 @@ router.get("/show", function (req, res) {
   res.render("./users/show");
 });
 
+// Delete a Post
 router.delete("/:id", function (req, res) {
   Post.findByIdAndDelete(req.params.id)
     .then(function (res) {

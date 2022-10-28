@@ -23,6 +23,7 @@ function index(req, res) {
   });
 }
 
+// Show post by ID
 function show(req, res) {
   Post.findById(req.params.id, function (err, posts) {
     res.render("users/show", { title: "Post Details", posts });

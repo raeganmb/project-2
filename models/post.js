@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// Schema for Comments
+
 const commentSchema = new Schema(
   {
     comments: String,
@@ -10,6 +12,7 @@ const commentSchema = new Schema(
   }
 );
 
+// Schema for Posts
 const postSchema = new Schema(
   {
     title: {

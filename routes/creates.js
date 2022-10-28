@@ -14,6 +14,7 @@ router.get("/logout", function (req, res, next) {
   res.redirect("/home");
 });
 
+// Create a Post
 router.post("/", postsCtrl.create);
 
 module.exports = router;

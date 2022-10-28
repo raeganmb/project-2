@@ -15,7 +15,6 @@ router.get("/logout", function (req, res, next) {
 });
 
 // Update a post
-
 router.put("/posts/:id", editsCtrl.updatePost);
 
 module.exports = router;

@@ -4,6 +4,7 @@ module.exports = {
   create,
 };
 
+// Add a Comment
 function create(req, res) {
   Post.findById(req.params.id, function(err, post) {
     post.comments.push(req.body);

@@ -5,7 +5,7 @@ module.exports = {
   updatePost,
 };
 
-// Edit a Post
+// Update a Post
 function updatePost(req, res) {
   console.log("I am here", req.body);
   Post.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
