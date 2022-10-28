@@ -21,7 +21,7 @@ And even create a post of your own:
 
 <img src="public/images/createpage.jpeg" width="600">
 
-Eventually, you will also be able to comment on other's posts, as well as your own posts, by clicking "See Post":
+Soon, you will also be able to comment on other's posts, as well as your own posts, by clicking "See Post":
 
 <img src="public/images/showpage.jpeg" width="600">
 
