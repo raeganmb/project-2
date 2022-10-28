@@ -140,7 +140,6 @@ margin: 8px 0;
 
 #edit-form input [type="submit"] {
   grid-column: span 2;
-  margin-left: auto;
 }
 
 table {
@@ -166,9 +165,15 @@ table td {
   font-size: 16px;
   color: rgb(71, 87, 57);
 }
-/* 
-textarea {
-  width: 500px;
-  height: auto;
-  align-items: left;
-} */
+
+#add-comment-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 25rem));
+  margin: 100px;
+}
+
+#add-comment-form input[type="submit"] {
+  grid-column: span 2;
+  margin-left: auto;
+}
