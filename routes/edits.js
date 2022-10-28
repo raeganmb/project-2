@@ -14,15 +14,8 @@ router.get("/logout", function (req, res, next) {
   res.redirect("/home");
 });
 
+// Update a post
 
-// Edit a Post
-router.put(function (err) {
-      // handle errors
-      if (err) return res.render("./users/posts");
-      // redirect
-      else res.redirect("/posts");
-    });
-
-    router.put("/create", editsCtrl.edit);
+router.put("/posts/:id", editsCtrl.updatePost);
 
 module.exports = router;

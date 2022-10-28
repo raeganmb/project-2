@@ -36,6 +36,7 @@ router.delete("/:id", function (req, res) {
 router.get("/show/:id/edit", function (req, res) {
   Post.findById(req.params.id)
     .then(function (post) {
+      console.log(post)
       res.render("./users/edit", { post: post });
     })
     .catch(function (error) {

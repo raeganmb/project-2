@@ -1,16 +1,15 @@
 const Post = require("../models/post");
+const { router } = require("../server");
 
 module.exports = {
-  edit,
+  updatePost,
 };
 
 // Edit a Post
-function edit(req, res) {
-  const post = Post(req.body);
-  post.put(function (err) {
-    // handle errors
-    if (err) return res.render("./users/posts");
-    // redirect
-    else res.redirect("/posts");
+function updatePost(req, res) {
+  console.log("I am here", req.body);
+  Post.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
+    if (err) console.log(err);
   });
+  res.redirect("/posts");
 }
