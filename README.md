@@ -1,9 +1,9 @@
 # Wet Your Plants: Full Stack Application - Project 2
 
-### A plant-loving community forum for questions and tips and tricks for all things that grow!
+A plant-loving community forum for questions and tips and tricks for all things that grow!
 
 
-##About the project
+###About the project
 
 This full stack application is a forum-style community for plant-lovers!  
 
@@ -11,22 +11,22 @@ After logging in with your Google account, you will have access to create posts 
 
 First, start by logging in on the home page:
 
-<img src="public/images/homepage.jpg" width="600">
+<img src="images/homepage.jpg" width="600">
 
 Then you will have access to see previously created posts:
 
-<img src="public/images/postspage.jpg" width="600">
+<img src="images/postspage.jpg" width="600">
 
 And even create a post of your own:
 
-<img src="public/images/createpage.jpg" width="600">
+<img src="images/createpage.jpg" width="600">
 
 Eventually, you will also be able to comment on other's posts, as well as your own posts, by clicking "See Post":
 
-<img src="public/images/showpage.jpg" width="600">
+<img src="images/showpage.jpg" width="600">
 
 
-##Built With:
+###Built With:
 
 - HTML
 - CSS
@@ -37,7 +37,7 @@ Eventually, you will also be able to comment on other's posts, as well as your o
 - Mongoose
 
 
-##Icebox Items and Next Steps:
+###Icebox Items and Next Steps:
 
 - Add a functional "Comments" section in the show.ejs page to add to the community discussion aspect of the page
 - Add the poster and commenter's username to their posts and comments based on their user IDs from Google
@@ -49,11 +49,11 @@ Eventually, you will also be able to comment on other's posts, as well as your o
 - Fix some styling inconsistencies 
 
 
-## Project Link:
+###Project Link:
 
 [Click here]()
 
-## Trello Link:
+###Trello Link:
 
 [Click here](https://trello.com/b/OVkwfhmz/project-2-wet-your-plants) 
 
